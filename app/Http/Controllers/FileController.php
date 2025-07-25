@@ -6,10 +6,12 @@ use App\Http\Requests\FileRequest;
 use App\Http\Resources\FileResource;
 use App\Models\File;
 use App\Models\Project;
+use Illuminate\Foundation\Auth\Access\AuthorizesRequests;
 use Illuminate\Http\Request;
 
 class FileController extends Controller
 {
+    use AuthorizesRequests;
     /**
      * Display a listing of the resource.
      */
